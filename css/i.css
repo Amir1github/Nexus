@@ -1,0 +1,96 @@
+form {
+    width: 25%;
+    margin: 100px auto;
+    font: 700 .9em Arial, serif;
+}
+
+div {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+p {
+    position: relative;
+    padding-left: 20px;
+}
+
+p input {
+    width: 220px;
+    padding-left: 20px;
+    position: relative;
+}
+
+p input, footer button {
+    position: absolute;
+    left: 160px;
+}
+
+footer button {
+    position: relative;
+    top: 10px;
+    width: 150px;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    height: 20px;
+
+}
+
+footer button::before {
+    position: absolute;
+    content: '';
+    height: 50%;
+    width: 96%;
+    left: 2%;
+    top: 0.9px;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+    border-radius: 25px;
+}
+
+p:nth-child(3n) {
+    margin-bottom: 40px;
+}
+
+p:last-child span:first-of-type {
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: lightgray;
+    position: relative;
+    border: 1px solid lightgray;
+}
+
+p input + span {
+    position: absolute;
+    left: 330px;
+    width: 200px;
+}
+
+p input:invalid + span::after {
+    content: 'x';
+    color: red;
+    left: 80px;
+    position: absolute;
+}
+
+p:last-child input:invalid + span::after {
+    content: 'Enter all fileds';
+}
+
+p input:valid + span::after {
+    content: 'OK';
+    color: green;
+    left: 80px;
+    position: absolute;
+}
