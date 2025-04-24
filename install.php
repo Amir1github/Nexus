@@ -125,3 +125,53 @@ function sha($user, $p)
     return $crypt;
 }
 ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/i.css">
+    <title>Nexus:Installation</title>
+
+</head>
+<body>
+<form>
+    <div>
+        <p>
+            <label>Database name</label>
+            <input type="text" name="dbname" required pattern="[A-za-z0-9_]+" placeholder="nexus"><span></span>
+        </p>
+
+        <p>
+            <label>Database address</label>
+            <input type="text" name="dbhost" required pattern="[A-za-z0-9\W]+" placeholder="localhost"><span></span>
+        </p>
+
+        <p>
+            <label>Database user</label>
+            <input type="text" name="dbuser" required pattern="[A-za-z0-9_]+" placeholder="root"><span></span>
+        </p>
+
+        <p>
+            <label>Database password</label>
+            <input type="password" name="dbpass" required ><span></span>
+        </p>
+
+        <p>
+            <label>Username</label>
+            <input type="text" name="name"  required  placeholder="user_123"><span></span>
+        </p>
+
+        <p>
+            <label>Password</label>
+            <input type="password" name="pass" required ><span></span>
+        </p>
+    </div>
+    <footer>
+        <button type="submit" name="submit">Install</button>
+    </footer>
+</form>
+</body>
+</html>
