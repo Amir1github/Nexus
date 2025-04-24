@@ -135,7 +135,6 @@ function sha($user, $p) {
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
